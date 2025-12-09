@@ -1,0 +1,52 @@
+[gd_scene load_steps=5 format=3 uid="uid://new_map_hub"]
+
+[ext_resource type="Texture2D" uid="uid://placeholder_map" path="res://assets/maps/cyberpunk_map_1024.png" id=1]
+[ext_resource type="Script" path="res://scripts/MapHub.gd" id=2]
+
+[node name="MapHub" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("2")
+
+[node name="Background" type="TextureRect" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("1")
+expand_mode = 1
+stretch_mode = 6
+
+[node name="Title" type="Label" parent="."]
+layout_mode = 1
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -300.0
+offset_top = 40.0
+offset_right = 300.0
+offset_bottom = 120.0
+grow_horizontal = 2
+theme_override_font_sizes/font_size = 64
+text = "NIGHT CITY"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="BackToMenu" type="Button" parent="."]
+layout_mode = 1
+anchors_preset = 0
+anchor_left = 0.03
+anchor_top = 0.03
+anchor_right = 0.03
+anchor_bottom = 0.03
+offset_left = 20.0
+offset_top = 20.0
+offset_right = 180.0
+offset_bottom = 80.0
+text = "← MENU"
